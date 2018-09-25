@@ -1,0 +1,82 @@
+#container {
+    width: 360px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background: #f7f7f7;
+}
+
+body {
+    font-family: Roboto;
+    background: #636363;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a2ab58, #636363);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+h1 {
+    background: #1631ce;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 10px 20px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #666;
+}
+
+.deleteTodo {
+    width: 0;
+    height: 40px;
+    color: white;
+    background-color: #e74c3c;
+    margin-right: 20px;
+    display: inline-block;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+li:hover .deleteTodo {
+    opacity: 1;
+    width: 40px;
+}
+
+li:nth-child(2n) {
+    background-color: #f7f7f7;
+}
+
+input {
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #666;
+    border: 0 solid rgba(0, 0, 0, 0)
+}
+
+input:focus {
+    border: 3px solid #1631ce;
+    background-color: white;
+    color: #1631ce;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.fa-pencil-alt {
+    float: right;
+}
